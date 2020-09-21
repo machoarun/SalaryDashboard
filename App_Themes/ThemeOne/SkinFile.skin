@@ -1,0 +1,4 @@
+<asp:TextBox runat="server" Font-Names="Verdana" Font-Size="11px" Width="120px"  Height=15px BorderStyle="Solid" BorderColor="Black" />
+<asp:dropdownlist runat="server" font-size="small"  forecolor="Blue" font-names="Cambria" Width="120px" Height=20px/>
+<asp:label runat="server" font-size="medium"  forecolor="Black" font-names="Cambria"/>
+<asp:button runat="server" font-size="small" forecolor="Black" font-names="Cambria"  Height=23px/>

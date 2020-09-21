@@ -1,0 +1,26 @@
+﻿body
+{
+	font-size: 14pt;
+	color: #c4d0c8;
+	background-color: black;
+}
+
+.Top_Header
+{
+	background-attachment: fixed;
+	background-image: url(App_Themes/Blue/images/header1.bmp);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+H1
+{
+	vertical-align: middle;
+	color: buttonface;
+	text-align: center;
+}
+
+.Panel
+{
+	background-color: #ccccff;
+}

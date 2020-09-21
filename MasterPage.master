@@ -1,0 +1,93 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <script type = "text/javascript" >
+function disableBackButton()
+{
+window.history.forward();
+}
+setTimeout("disableBackButton()", 0);
+window.onunload=function(){null};
+</script>
+
+    <style type="text/css">
+        .style1
+        {
+            height: 51px;
+            width: 1043px;
+        }
+        .style2
+        {
+            height: 470px;
+            width: 1043px;
+        }
+        .style3
+        {
+            height: 51px;
+            width: 23070px;
+        }
+        .style4
+        {
+            height: 470px;
+            width: 23070px;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Panel ID="Panel1" runat="server" BorderColor="#FFC0C0" BackImageUrl="~/App_Themes/Blue/Images/btn_Blue.bmp" Width=1440px Height=900px>
+        <table>
+            <tr>
+                <td class="style1" style="width: 1534px">
+                    
+                    </td>
+                <td align="center" class="style3" style="width: 1088px">
+                    &nbsp;</td>
+                <td style="width: 8725px; height: 51px;">
+
+                    <asp:Label ID="Label1" runat="server" EnableTheming="False" Font-Bold="True" 
+                        Font-Italic="False" Font-Names="OCR A Extended" Font-Size="XX-Large" 
+                        ForeColor="DarkBlue" Text="       Salary Dashboard"></asp:Label>
+                    </td>
+            </tr>
+            <tr>
+                <td class="style2" style="width: 1534px">
+                    <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Times New Roman" Font-Size="Smaller"
+                        ForeColor="#333300" Height="8px" NavigateUrl="~/Home.aspx" Style="left: 144px;
+                        position: absolute; top: 104px" Width="32px">Home</asp:HyperLink>
+                </td>
+                <td class="style4" style="width: 1088px">
+                    &nbsp;</td>
+                <td style="height: 470px; width: 8725px;">
+                    <table border="0" cellpadding="0" cellspacing="0" style="width: 649px; height: 273px">
+                        <tr>
+                            <td colspan="2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        </asp:Panel>
+        &nbsp;&nbsp;</div>
+    </form>
+</body>
+</html>
